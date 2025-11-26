@@ -58,7 +58,7 @@ spec:
           description: ${{ parameters.description }}
           destination:
             repo: ${{ parameters.repo }}
-            owner: ramannkhanna2
+            owner: chandan-cordova
           port: ${{ parameters.port }}  
 
     - id: wait
