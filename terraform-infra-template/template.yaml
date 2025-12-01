@@ -50,7 +50,7 @@ spec:
       name: Publish to GitHub
       action: publish:github
       input:
-        repoUrl: github.com?owner=ramannkhanna2&repo=${{ parameters.project_name }}-infra
+        repoUrl: github.com?owner=chandan-cordova&repo=${{ parameters.project_name }}-infra
         repoVisibility: private
 
     - id: register
@@ -63,3 +63,4 @@ spec:
     links:
       - title: GitHub Repository
         url: ${{ steps['publish'].output.remoteUrl }}
+
