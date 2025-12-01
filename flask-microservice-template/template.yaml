@@ -58,7 +58,7 @@ spec:
           description: ${{ parameters.description }}
           destination:
             repo: ${{ parameters.repo }}
-            owner: chandan-cordova
+            owner: ramannkhanna2
           port: ${{ parameters.port }}  
 
     - id: wait
@@ -71,8 +71,8 @@ spec:
       name: Publish to GitHub
       action: publish:github
       input:
-        #repoUrl: github.com?repo=${{ parameters.repo }}&owner=chandan-cordova
-        repoUrl: github.com?owner=chandan-cordova&repo=${{ parameters.repo }}
+        #repoUrl: github.com?repo=${{ parameters.repo }}&owner=ramannkhanna2
+        repoUrl: github.com?owner=ramannkhanna2&repo=${{ parameters.repo }}
         repoVisibility: ${{ parameters.repoVisibility }}
 
 
